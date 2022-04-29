@@ -1,0 +1,103 @@
+#container {
+  width: 80vw;
+  margin: auto;
+}
+
+#table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#table td, #table th {
+  min-width: 150px;
+  text-align: center;
+}
+
+#table tr {
+  height: 2rem;
+  border-bottom: .5px solid black;
+}
+
+#table tbody tr:nth-child(odd) {
+  background-color: #ddd;
+}
+
+#table thead tr {
+  background-color: #444;
+  color: white;
+}
+
+.delete-btn {
+  color: white;
+  background-color: #aa0000;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.delete-btn:hover {
+  background-color: #ee0000;
+}
+
+.update-btn {
+  color: white;
+  background-color: #00a;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.update-btn:hover {
+  background-color: #008;
+}
+
+.form .group {
+  margin-bottom: 2rem;
+}
+
+.form .group label {
+  font-size: 1.4rem;
+}
+
+.form .group input {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.create-btn {
+  font-size: 1.2rem;
+  background-color: #008800;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background-color: #005500;
+}
+
+.nav-btn {
+  background-color: white;
+  font-size: 1.2rem;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.nav-btn:hover {
+  background-color: #ddd;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Személyek</title>
+</head>
+<body>
+
+  <button 
+    class="nav-btn" 
+    onclick="loadTemplate('table-template'); fillTable();">
+    Lista
+  </button>
+
+  <button 
+    class="nav-btn" 
+    onclick="loadTemplate('create-from-template')">
+    Új személy
+  </button>
+
+  <div id="container">
+    
+  </div>
+
+  <template id="create-from-template">
+    <div class="form">
+
+      <h1>Új személy rögzítése</h1>
+
+      <div class="group">
+        <label for="name">Név</label>
+        <input type="text" id="name" name="name">
+      </div>
+
+      <div class="group">
+        <label for="age">Kor</label>
+        <input type="number" id="age" name="age">
+      </div>
+
+      <button class="create-btn" onclick="createPerson()">Létrehozás</button>
+
+    </div>
+  </template>
+
+  <template id="update-from-template">
+    <div class="form">
+
+      <h1>Személy módosítása</h1>
+
+      <div class="group">
+        <label for="name">Név</label>
+        <input type="text" id="name" name="name">
+      </div>
+
+      <div class="group">
+        <label for="age">Kor</label>
+        <input type="number" id="age" name="age">
+      </div>
+
+      <button id="update-btn" class="update-btn" onclick="updatePerson()">Módosítás</button>
+
+    </div>
+  </template>
+  
+  <template id="table-template">
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Azonosító</th>
+          <th>Név</th>
+          <th>Kor</th>
+          <th>Törlés</th>
+          <th>Módosítás</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </template>
+
+  <script src="./scripts/app.js"></script>
+  
+</body>
+</html>
